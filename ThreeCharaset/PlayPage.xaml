@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ThreeCharaset.PlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+   
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent" >
+        <MediaElement x:Name="mediaElement" Source="Assets/Demo.mp4" AutoPlay="False" Canvas.Left="316" Canvas.Top="156" Tap="play_Clicker" />
+        <Image x:Name="playView"  Source="Assets/play_icon.png" VerticalAlignment="Center"   HorizontalAlignment="Center" Stretch="None" Tap="play_Clicker"   />
+        <!--<Button x:Name="btnPlay" Content="播放" Click="btnPlay_Click" Canvas.Left="132" Canvas.Top="100" />
+            <Button x:Name="btnPause" Content="暂停" Click="btnPause_Click" Canvas.Left="10" Canvas.Top="228" />
+
+            <TextBlock x:Name="lblStatus" />-->
+
+    </Grid>
+
+    <!--<Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel Orientation="Vertical">
+            <MediaElement x:Name="mediaElement" Source="Assets/Demo.mp4" AutoPlay="False" />
+
+            <Button x:Name="btnPlay" Content="播放" Click="btnPlay_Click" />
+            <Button x:Name="btnPause" Content="暂停" Click="btnPause_Click" />
+
+            <TextBlock x:Name="lblStatus" />
+        </StackPanel>
+    </Grid>-->
+
+</phone:PhoneApplicationPage>
